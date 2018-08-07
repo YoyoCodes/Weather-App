@@ -9,7 +9,7 @@
 # production
 /build
 
-#credentials for Weather API
+# credentials for Weather API
 .env
 
 # misc
