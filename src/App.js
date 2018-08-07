@@ -5,10 +5,6 @@ import Weather from "./components/Weather.js"
 
 require('dotenv').config()
 
-const URL = "http://api.openweathermap.org/data/2.5/weather?q="
-const API_KEY = "8b67121ad7a2705a42906e14a14c0859"
-const UNITS = "metric"
-
 class App extends React.Component {
   state = {
     temperature: undefined,
@@ -24,7 +20,7 @@ class App extends React.Component {
     const city=e.target.elements.city.value;
     const country=e.target.elements.country.value
     const api_call = await fetch(
-      `${URL}${city},${country}&appid=${API_KEY}&units=${UNITS}`
+      `${process.env.REACT_APP_URL}${city},${country}&appid=${process.env.REACT_APP_API_KEY}&units=${process.env.REACT_APP_UNITS}`
     );
 
     const data = await api_call.json();

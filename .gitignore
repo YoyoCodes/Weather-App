@@ -10,7 +10,7 @@
 /build
 
 #credentials for Weather API
-private.sh
+.env
 
 # misc
 .DS_Store
