@@ -1,6 +1,7 @@
 import React from "react";
 
 const Weather = (props) => {
+  console.log("icon",props.icon)
     return (
       <div className="weather-info">
         { props.city && props.country &&
@@ -27,10 +28,12 @@ const Weather = (props) => {
             <span className="weather-value">{props.conditions}</span>
           </p>
         }
-        { props.description &&
+        { props.description && props.icon &&
           <p className="weather-key">
             Description:
-            <span className="weather-value">{props.description}</span>
+            <span className="weather-value">{props.description}
+              <img src={`http://openweathermap.org/img/w/${props.icon}.png`}/>
+            </span>
           </p>
          }
         { props.error &&

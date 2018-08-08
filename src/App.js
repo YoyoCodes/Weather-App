@@ -13,6 +13,7 @@ class App extends React.Component {
     country: undefined,
     description: undefined,
     humidity: undefined,
+    icon: undefined,
     error: undefined
   }
 
@@ -32,7 +33,9 @@ class App extends React.Component {
         city: data.name,
         country: data.sys.country,
         description: data.weather[0].description,
-        humidity: data.main.humidity
+        humidity: data.main.humidity,
+        icon: data.weather[0].icon,
+        error: undefined
       })
     }else{
       this.setState({
@@ -41,10 +44,12 @@ class App extends React.Component {
         country: undefined,
         description: undefined,
         humidity: undefined,
+        icon: undefined,
         error: "Please enter valid values"
       })
     }
   }
+
 
   render() {
     return (
@@ -54,7 +59,7 @@ class App extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="col-xs-5 title-container">
-                  <Titles />
+                  <Titles/>
                 </div>
                 <div className="col-xs-7 form-container">
                   <Form getWeather={this.getWeather}/>
@@ -64,6 +69,7 @@ class App extends React.Component {
                     country={this.state.country}
                     description={this.state.description}
                     humidity={this.state.humidity}
+                    icon={this.state.icon}
                     error={this.state.error}
                   />
                 </div>
