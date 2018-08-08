@@ -37,7 +37,7 @@ const Weather = (props) => {
           </p>
          }
         { props.error &&
-          <p>
+          <p className="weather-error">
             {props.error}
           </p>
         }

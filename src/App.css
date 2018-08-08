@@ -112,3 +112,10 @@ button:hover {
   color: #005BA1;
   font-weight: 200;
 }
+
+.weather-error {
+  color: #f16051;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
