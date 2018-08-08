@@ -6,3 +6,6 @@ Weather NOW is a React front end app that uses the data from an external API to 
 Fork and clone the repo.
 The credentials for the weather API are in a .env file that has been gitignored. To be able to connect to the API you'd have to create an account [here](https://openweathermap.org/api) or get in touch with me.
 To run the app use `npm start`.
+
+## About
+Trough the API call I obtained a Json object from where I selected the relevant information. For the Icon I isolated the icon name from the Json Object and then I interpolated it's value in a string url that changes dynamically for each request.
