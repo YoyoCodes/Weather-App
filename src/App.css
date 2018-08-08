@@ -13,6 +13,7 @@
   background-image: url("./bk.jpg");
   background-size: cover;
   height: 90vh;
+  display: flex;
   opacity: 20%;
   box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
   width: 70%;
@@ -29,7 +30,7 @@
 }
 
 .title-container-title {
-  font-size: 60px;
+  font-size: 4.5em;
   padding-bottom: 15px;
   text-shadow: 1px 1px 1px #000,
                3px 3px 5px #fff;
@@ -39,9 +40,8 @@
 }
 
 .title-container-subtitle {
-  font-size: 25px;
+  font-size: 1.8em;
   font-style: italic;
-  font-weight: 100;
   letter-spacing: 1px;
   line-height: 1.5;
   font-family: 'Poiret One', cursive;
@@ -50,10 +50,10 @@
 .form-container {
   opacity: 0.9;
   background-color: #DDE3EF;
-  height: 70vh;
-  margin-top: 100px;
-  padding-top: 100px;
-  padding-left: 50px;
+  height: 70%;
+  margin-top: 3em;
+  padding-top: 2em;
+  padding-left: 1em;
   font-family: 'Domine', serif;
 }
 
@@ -64,11 +64,10 @@ input[type="text"] {
   width: 30%;
   padding-bottom: 4px;
   color: #016FBC !important;
-  font-weight: lighter;
   letter-spacing: 1.5px;
   margin-bottom: 30px;
   margin-right: 20px;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 input:-webkit-autofill {
@@ -81,13 +80,11 @@ button {
   padding: 8px 20px;
   margin: 0 2px;
   border-radius: 3px;
-  font-weight: lighter;
   letter-spacing: 1.5px;
-  font-size: 15px;
+  font-size: 1.2em;
   cursor: pointer;
   background-color: #005BA1;
   color: #fff;
-  font-weight: 100;
 }
 
 button:hover {
@@ -96,26 +93,23 @@ button:hover {
 
 .weather-info {
   width: 60%;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 1.5em;
   letter-spacing: 2px;
 }
 
 .weather-key {
   color: #666666;
   border-bottom: solid 2px rgba(255,255,255,0.06);
-  padding: 20px 0 20px 0;
-  font-weight: 400;
+  padding: 0.8em 0 0.8em 0;
 }
 
 .weather-value {
   color: #005BA1;
-  font-weight: 200;
+  padding-left: 1em;
 }
 
 .weather-error {
   color: #f16051;
   font-size: 20px;
   letter-spacing: 1px;
-  font-weight: 200;
 }
