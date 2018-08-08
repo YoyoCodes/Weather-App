@@ -1,8 +1,35 @@
 .wrapper {
-  background-image: url("./bk.jpg");
-  background-size: cover;
+  background-color: #016FBC;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main {
+  background-image: url("./bk.jpg");
+  background-size: cover;
+  height: 90vh;
+  opacity: 20%;
+  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.title-container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+.form-container {
+  opacity: 0.9;
+  background-color: #DDE3EF;
+  height: 70vh;
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-left: 50px;
 }
