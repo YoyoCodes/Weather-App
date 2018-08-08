@@ -75,3 +75,21 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #016FBC inset;
     -webkit-text-fill-color: #fff !important;
 }
+
+button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 3px;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #005BA1;
+  color: #fff;
+  font-weight: 100;
+}
+
+button:hover {
+  background-color: #FFCC00;
+}
