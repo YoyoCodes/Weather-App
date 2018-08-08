@@ -110,6 +110,6 @@ button:hover {
 
 .weather-error {
   color: #f16051;
-  font-size: 20px;
+  font-size: 1.2em;
   letter-spacing: 1px;
 }
